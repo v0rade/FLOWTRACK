@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
   // so it uses the classic dynamic rendering model instead of Cache Components.
   poweredByHeader: false,
   serverExternalPackages: ["@electric-sql/pglite"],
+  outputFileTracingIncludes: {
+    "/**": ["./supabase/**/*"],
+  },
   turbopack: {
     rules: {
       "*.css": {
